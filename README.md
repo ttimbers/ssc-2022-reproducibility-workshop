@@ -14,7 +14,7 @@ as well as a record of how the analysis methods evolved
 This history is important for recording how and why decisions to use one method 
 or another were made, among other things.  
 
-Thoughts: wriiting code is important for creating reproducible and auditable analyses, but it is not enough. 
+Thoughts: writing code is important for creating reproducible and auditable analyses, but it is not enough. 
 More is needed, including a recorded and shareable compute environment, and a version controlled history of the project.
 
 ### Possible workshop topics:
