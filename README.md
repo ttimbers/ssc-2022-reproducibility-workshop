@@ -23,6 +23,8 @@ I assume the audience is most likely familiar with the R programming language (a
 and would prefer to stay in an R-only world as opposed to moving into more devops like tools for 
 compute environment managment.
 
-- what is reproducibliily and why is it important (30-60 min)
-- version control (e.g, Git & GitHub via RStudio/Happy Git with R) (3 hrs?)
-- shareable compute environments (e.g., `renv`) (1.5 hrs)
+- what is reproducibliily and why is it important (60 min)
+- the importance of reproducible coding habits (e.g., scripting, usethis, here) for portability and 're-run-ability' (60 minutes)
+- version control (Git, mostly - concepts, mapping, understanding the basics of branching and commits) (60 minutes)
+- integrating version control into your workflow (Git & GitHub via RStudio/Happy Git with R) (60 minutes)
+- shareable compute environments (e.g., `renv`) (1.5 hrs) - link back to the second item
