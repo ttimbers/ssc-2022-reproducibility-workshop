@@ -1,6 +1,8 @@
 ## SSC 2022 Reproducibility workshop
 
-Some definitions to help us scope the workshop:
+**Blurb**: This workshop will equip participants with tools (Git, R/Rstudio) and best practices for implementing data analysis workflows that promote collaboration and reproducibility. Besides being integral to research, these tools and principles have also transformed the teaching of statistics, facilitating the development of active and experiential learning.
+
+### Some definitions to help us scope the workshop:
 
 **Data science:** process of extracting insight from data through reproducible and auditable methods.
 
