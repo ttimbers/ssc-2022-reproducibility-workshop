@@ -1,6 +1,6 @@
 ## SSC 2022 Reproducibility workshop
 
-**Blurb**: This workshop will equip participants with tools (Git/GitHub, R/Rstudio and `renv`- an R dependency management tool) and best practices for implementing data analysis workflows that promote collaboration and reproducibility. These tools and workflows are integral to creating reproducible and transparent research - research where the same result can be reached given the  same input, computational methods, and conditions, as well one that has a history that records how and why decisions to use one method or another were made, among other things. These tools and principles have also transformed the teaching of statistics, facilitating the development of active and experiential learning.
+**Blurb**: This workshop will equip participants with tools (Git/GitHub, R/Rstudio and `renv`- an R dependency management tool) and best practices for implementing data analysis workflows that promote collaboration and reproducibility. These tools and workflows are integral to creating reproducible and transparent research - research where the same result can be reached given the  same input, computational methods, and conditions, as well as one that has a history which records how and why decisions were made that shaped the analysis. These tools and principles have also transformed the teaching of statistics, facilitating the development of active and experiential learning.
 
 ### Some definitions to help us scope the workshop:
 
