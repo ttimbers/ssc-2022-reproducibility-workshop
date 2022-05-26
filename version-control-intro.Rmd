@@ -1,0 +1,68 @@
+---
+title: "Version control - an introduction"
+subtitle: "SSC 2022 Reproducibility workshop"  
+author: 
+  - "TiffanyTimbers (UBC)"
+  - "`r Sys.Date()`"
+date: '*bit.ly/TBD*'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%'
+      titleSlideClass: [top, left]
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#9F999C",
+  secondary_color = "#FFE5F3",
+  inverse_header_color = "#8F8C8E",
+  link_color = "deeppink",
+  title_slide_text_color = "#3d3d3d",
+  title_slide_background_image = "img/title-slide-background-light.png",
+  title_slide_background_position = "left",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+class: center, middle
+
+# Version control - an Introduction
+
+---
+
+### References
+
+
+
+### Credits
+
+---
+
+### Acknowledgements
+
+
+---
+
+class: inverse, center, middle
+
+# Questions?
+
+
+
+### TiffanyTimbers
+
+#### talk slides: *[bit.ly/TBD](https://bit.ly/TBD)*
