@@ -1,3 +1,9 @@
+---
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
 ## SSC 2022 Reproducibility Workshop
 
 ### Join our Slack Community
@@ -7,7 +13,7 @@ this workshop, and the follow-ups afterward. You can join this Slack
 [for
 free](https://join.slack.com/t/sscstatistics-2n57302/shared_invite/zt-roolxsm8-RXc3rjbi~BMyzutPL8UJ9w),
 and we encourage you to hop on and then join the
-#ses2022workshop-reproducibility channel. Both Tiffany and Wesley will
+ses2022workshop-reproducibility channel. Both Tiffany and Wesley will
 be in the channel before/during/after the workshop.
 
 ### Local Installation
@@ -20,7 +26,8 @@ own file system, you should complete the following steps.
 2.  Update your version of RStudio locally to at least 2022.02, to match
     the flow we will show.
 3.  Install Git locally ([Windows](https://git-for-windows.github.io/);
-    [Mac](https://www.freecodecamp.org/news/install-xcode-command-line-tools/)).
+    [Mac](https://ubc-mds.github.io/resources_pages/install_ds_stack_mac/#git/) - note that
+    all you need to do are the first 3 steps).
 
 Regardless of whether you will work locally, or on the provided server
 environment, you will need to register for a GitHub account (below).
