@@ -18,7 +18,7 @@ and conditions (from National Academy of Sciences, 2019).
 **Auditable analysis:** an analysis with a readable record of the steps used to carryout
 the analysis (*i.e.*, computer code) 
 as well as a record of how the analysis methods evolved 
-(*i.e.,* a version controlled project history) (from Parker, 2017 and Ram, 2013). 
+(*i.e.,* a version controlled project history) (from [Parker, 2017](https://onlinelibrary.wiley.com/doi/10.1111/brv.12013) and [Ram, 2013](https://scfbm.biomedcentral.com/articles/10.1186/1751-0473-8-7))
 This history is important for recording how and why decisions to use one method 
 or another were made, among other things.  
 
