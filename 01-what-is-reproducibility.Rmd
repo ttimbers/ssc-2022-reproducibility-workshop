@@ -115,9 +115,9 @@ https://doi.org/10.1190/1.1822162
 
 ## Some Necessary Components
 
-To make any research project computationally reproducible
+To make any research project **computationally** reproducible
 
-- all data and files clearly: separated; labelled; documented
+- all data and files should be clearly: separated; labelled; documented
     
 --
 
@@ -125,7 +125,7 @@ To make any research project computationally reproducible
 
 --
 
-- workflow designed as a sequence of steps (**scripts!**), combined so intermediate outputs from one step directly feed in as inputs to the next
+- workflow should be designed as a sequence of steps (**scripts!**), combined so intermediate outputs from one step directly feed in as inputs to the next
 
 --
 

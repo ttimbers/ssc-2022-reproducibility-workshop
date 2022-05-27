@@ -4,7 +4,7 @@
     <title>Importance of Reproducible Coding Habits</title>
     <meta charset="utf-8" />
     <meta name="author" content="Wesley Burr (Trent)" />
-    <meta name="date" content="2022-05-26" />
+    <meta name="date" content="2022-05-27" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: top, left, title-slide
 
+.title[
 # Importance of Reproducible Coding Habits
+]
+.subtitle[
 ## SSC 2022 Reproducibility workshop
+]
+.author[
 ### Wesley Burr (Trent)
-### 2022-05-26
+]
+.date[
+### 2022-05-27
+]
 
 ---
 
@@ -24,14 +32,13 @@ class: top, left, title-slide
 
 
 
-## Reproducible Research
+## Reproducible Research through Coding Habits
 
 In order to ensure research outputs are robust, and to maximize the time,
-money, blood, sweat, and tears that went into it, for future researchers
+money, blood, sweat, and tears that went into them, for future researchers
 and for society in general, it is critical that we share the underlying
-code and data. 
-
-In these slides, we will attempt to convince you of this.
+code and data. This allows for replicability of results, and is part
+of **computational reproducibility**.
 
 ---
 
@@ -50,10 +57,7 @@ work on the incomplete dataset.
 
 ## Have You Ever ...
 
-You come back to a project, which you know was working, and find that
-nothing runs anymore. And what runs, doesn't match what you remember.
-
-**Worse**: the reviewers come back with some positive feedback for your paper,
+Reviewers come back with some positive feedback for your paper,
 but ask that you check something in one of the model runs. When you go to do
 so ... nothing matches the output in the paper. Not the figures, not the tables,
 not the results. What happened??!?
@@ -73,23 +77,13 @@ not the results. What happened??!?
 
 ---
 
-## Have You Ever ...
-
-&lt;img src="img/02-importance-of-reproducibility/redpen-blackpen-collab.jpg" width="85%" style="display: block; margin: auto;" /&gt;
-
----
-
-## So Why is It Important?
+## So Why is Is Reproducibility in Coding Important?
 
 - your personal sanity
 
 --
 
 - the great scientific endeavor
-
---
-
-- no, but seriously: your personal sanity
 
 --
 
@@ -199,6 +193,8 @@ a number of advantages:
 Depending on how computational your statistics world is, this may not
 fully sink in. What is **code**?
 
+--
+
 - all text (ASCII or UTF)
 
 --
@@ -221,17 +217,83 @@ Or in anything but a slide editor (e.g., Notepad)?
 
 ---
 
-## Once You See It
+## Tool: usethis
 
-Once you start thinking of almost all of our work product as
-examples of code, you start to see how everything can be treated
-the same, in terms of workflow, versioning, file organization and
-naming, sharing, and so on.
+Building good coding habits (and everything is code!) is important. You need
+to think of every action or step you take as being something that potentially
+will cause you a problem in the future. If you find yourself doing something
+manually once ... you'll probably do it manually 100x unless you fix the
+design pattern.
 
+**usethis** is a [package for R](https://cran.r-project.org/web/packages/usethis/index.html) developed by folks at RStudio that tries to
+help with common tasks that get repeated often.
+
+---
+
+## Tool: usethis
+
+Some common tasks that can be handled with this package:
+
+- setting up Git credentials
+
+--
+
+- create a project from a repo
+
+--
+
+- open/edit R configuration files
+
+--
+
+- interact with a Git repo (branches, commits, etc.)
+
+--
+
+- work with projects or packages
+
+---
+
+## Tool: here
+
+The goal of the **here** package is to enable easy file referencing in project-oriented
+workflows. In contrast to using **setwd()**, which is fragile and dependent on the 
+way you organize your files, **here** uses the top-level directory of a project 
+to easily build paths to files.
+
+---
+
+## Tool: here
+
+&lt;img src="img/02-importance-of-reproducibility/02-here.png" width="60%" style="display: block; margin: auto;" /&gt;
+
+Illustration by [Allison Horst](https://github.com/allisonhorst)
+
+---
+
+## Tool: here
+
+The key to **here** is something that can be done manually, but is really important:
+machine portability. Fragile things like **setwd()** Do. Not. Work. when transferring
+data/code/analyses/projects across different computational environments. 
+
+This is especially bad when going from architecture to architecture - for example,
+from a Windows machine to a Mac OS or Linux machine, or vice versa. 
+
+Using **here** for all File Input/Output actions forces compatibility, and 
+encourages you to think about your organization structure in a way which is
+conducive to computational reproducibility. 
+
+---
+
+## Coming Up Next
 
 In the next session, we will dive into a version of what we have
-been calling **version control**, and introduce the concepts 
+been calling **version control** called **Git** (first developed by
+Linus Torvalds, of the Linux and Linux kernel fame), and introduce the concepts 
 necessary to get started. 
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -281,6 +343,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
