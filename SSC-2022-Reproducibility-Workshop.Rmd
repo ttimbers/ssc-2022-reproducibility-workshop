@@ -62,5 +62,3 @@ class: left, middle
 
 ---
 
-class: inverse, center, middle
-
