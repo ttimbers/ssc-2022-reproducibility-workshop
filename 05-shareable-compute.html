@@ -1,53 +1,36 @@
----
-title: "Shippable and shareable computational environments"
-subtitle: "SSC 2022 Reproducibility workshop"  
-author: 
-  - "TiffanyTimbers (UBC)"
-  - "`r Sys.Date()`"
-date: '*bit.ly/TBD*'
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    css: xaringan-themer.css
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      slideNumberFormat: '%current%'
-      titleSlideClass: [top, left]
-      ratio: '16:9'
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Shippable and shareable computational environments</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="TiffanyTimbers (UBC)" />
+    <meta name="author" content="2022-05-27" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, left, title-slide
+
+# Shippable and shareable computational environments
+## SSC 2022 Reproducibility workshop
+### TiffanyTimbers (UBC)
+### 2022-05-27
+### <em>bit.ly/TBD</em>
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(message = FALSE, 
-                      echo = FALSE, 
-                      warning = FALSE,
-                      fig.align = "center")
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#9F999C",
-  secondary_color = "#FFE5F3",
-  inverse_header_color = "#8F8C8E",
-  link_color = "deeppink",
-  title_slide_text_color = "#3d3d3d",
-  title_slide_background_image = "img/title-slide-background-light.png",
-  title_slide_background_position = "left",
-  header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
-)
-```
+
+
+
 
 class: center, middle
 
-> *You mostly collaborate with yourself, 
-> and me-from-two-months-ago never responds to email.*
-> 
-> --Mark T. Holder
+&gt; *You mostly collaborate with yourself, 
+&gt; and me-from-two-months-ago never responds to email.*
+&gt; 
+&gt; --Mark T. Holder
 
 ---
 
@@ -81,11 +64,11 @@ and these fall under three general umbrellas:
 
 3. Virtual machines (e.g., VirtualBox, Amazon Machine Instance)
 
-> These three umbrellas are split upon the level of where virtualization
-> is performed on the computer. 
-> With virtual environments being at the highest level (application),
-> containerization being in the middle (operating system user-space),
-> and virtual machines being at the lowest level (hardware).
+&gt; These three umbrellas are split upon the level of where virtualization
+&gt; is performed on the computer. 
+&gt; With virtual environments being at the highest level (application),
+&gt; containerization being in the middle (operating system user-space),
+&gt; and virtual machines being at the lowest level (hardware).
 
 ---
 
@@ -105,9 +88,7 @@ while keeping them isolated so they do not create conflicts with each other.
 ]
 
 .pull-right[
-```{r renv-logo, out.width="70%", fig.align = "left"}
-knitr::include_graphics("img/05-shareable-compute/renv-logo.png")
-```
+&lt;img src="img/05-shareable-compute/renv-logo.png" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
 
 *Source: https://github.com/rstudio/renv*
 
@@ -120,14 +101,14 @@ class: inverse, center, middle
 ## Attribution:
 
 .pull-left[
-Much of the documentation in this hands-on portion of the workshop <br>
+Much of the documentation in this hands-on portion of the workshop &lt;br&gt;
 comes from the excellent `renv` website: https://rstudio.github.io/renv/
 
 The website and the `renv` package is written and maintained by [Kevin Ushey](https://kevinushey.github.io/).
 ]
 
 .pull-right[
-<img src="https://kevinushey.github.io/img/kevin.jpg" width=200>
+&lt;img src="https://kevinushey.github.io/img/kevin.jpg" width=200&gt;
 ]
 
 
@@ -165,7 +146,7 @@ The following files are written to and used by projects using `renv`:
 | `renv/library`      | The private project library.                                                        |
 | `renv/settings.dcf` | Project settings -- see `?settings` for more details.                               |
 
-> For development and collaboration, the `.Rprofile`, `renv.lock` 
+&gt; For development and collaboration, the `.Rprofile`, `renv.lock` 
 and `renv/activate.R` files should be committed to your version control system
 
 ---
@@ -179,7 +160,8 @@ class: middle
 - As `renv` is an R package, 
 we can install it using using our familiar R package installation workflow:
 
-```{r install-renv, echo=TRUE, eval=FALSE}
+
+```r
 install.packages("renv")
 ```
 
@@ -294,13 +276,15 @@ class: middle
 
 - Install the `fortunes` R package via:
 
-```{r install-fortunes, echo=TRUE, eval=FALSE}
+
+```r
 install.packages("fortunes")
 ```
 
 - Add the following code to a code chunk at the top of your `report.rmd`
 
-```{r run-fortune, echo=TRUE, eval=FALSE}
+
+```r
 library(fortunes)
 fortune(2022)
 ```
@@ -409,3 +393,128 @@ class: inverse, center, middle
 ### TiffanyTimbers
 
 #### talk slides: *[bit.ly/TBD](https://bit.ly/TBD)*
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
