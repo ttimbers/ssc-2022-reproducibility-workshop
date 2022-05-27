@@ -41,14 +41,13 @@ style_duo_accent(
 )
 ```
 
-## Reproducible Research
+## Reproducible Research through Coding Habits
 
 In order to ensure research outputs are robust, and to maximize the time,
-money, blood, sweat, and tears that went into it, for future researchers
+money, blood, sweat, and tears that went into them, for future researchers
 and for society in general, it is critical that we share the underlying
-code and data. 
-
-In these slides, we will attempt to convince you of this.
+code and data. This allows for replicability of results, and is part
+of **computational reproducibility**.
 
 ---
 
@@ -67,10 +66,7 @@ work on the incomplete dataset.
 
 ## Have You Ever ...
 
-You come back to a project, which you know was working, and find that
-nothing runs anymore. And what runs, doesn't match what you remember.
-
-**Worse**: the reviewers come back with some positive feedback for your paper,
+Reviewers come back with some positive feedback for your paper,
 but ask that you check something in one of the model runs. When you go to do
 so ... nothing matches the output in the paper. Not the figures, not the tables,
 not the results. What happened??!?
@@ -92,25 +88,13 @@ knitr::include_graphics("img/03-version-control-intro/phdcomicid1531.png")
 
 ---
 
-## Have You Ever ...
-
-```{r redpen, out.width="85%"}
-knitr::include_graphics("img/02-importance-of-reproducibility/redpen-blackpen-collab.jpg")
-```
-
----
-
-## So Why is It Important?
+## So Why is Is Reproducibility in Coding Important?
 
 - your personal sanity
 
 --
 
 - the great scientific endeavor
-
---
-
-- no, but seriously: your personal sanity
 
 --
 
@@ -220,6 +204,8 @@ a number of advantages:
 Depending on how computational your statistics world is, this may not
 fully sink in. What is **code**?
 
+--
+
 - all text (ASCII or UTF)
 
 --
@@ -242,14 +228,82 @@ Or in anything but a slide editor (e.g., Notepad)?
 
 ---
 
-## Once You See It
+## Tool: usethis
 
-Once you start thinking of almost all of our work product as
-examples of code, you start to see how everything can be treated
-the same, in terms of workflow, versioning, file organization and
-naming, sharing, and so on.
+Building good coding habits (and everything is code!) is important. You need
+to think of every action or step you take as being something that potentially
+will cause you a problem in the future. If you find yourself doing something
+manually once ... you'll probably do it manually 100x unless you fix the
+design pattern.
 
+**usethis** is a [package for R](https://cran.r-project.org/web/packages/usethis/index.html) developed by folks at RStudio that tries to
+help with common tasks that get repeated often.
+
+---
+
+## Tool: usethis
+
+Some common tasks that can be handled with this package:
+
+- setting up Git credentials
+
+--
+
+- create a project from a repo
+
+--
+
+- open/edit R configuration files
+
+--
+
+- interact with a Git repo (branches, commits, etc.)
+
+--
+
+- work with projects or packages
+
+---
+
+## Tool: here
+
+The goal of the **here** package is to enable easy file referencing in project-oriented
+workflows. In contrast to using **setwd()**, which is fragile and dependent on the 
+way you organize your files, **here** uses the top-level directory of a project 
+to easily build paths to files.
+
+---
+
+## Tool: here
+
+```{r here, out.width="60%"}
+knitr::include_graphics("img/02-importance-of-reproducibility/02-here.png")
+```
+
+Illustration by [Allison Horst](https://github.com/allisonhorst)
+
+---
+
+## Tool: here
+
+The key to **here** is something that can be done manually, but is really important:
+machine portability. Fragile things like **setwd()** Do. Not. Work. when transferring
+data/code/analyses/projects across different computational environments. 
+
+This is especially bad when going from architecture to architecture - for example,
+from a Windows machine to a Mac OS or Linux machine, or vice versa. 
+
+Using **here** for all File Input/Output actions forces compatibility, and 
+encourages you to think about your organization structure in a way which is
+conducive to computational reproducibility. 
+
+---
+
+## Coming Up Next
 
 In the next session, we will dive into a version of what we have
-been calling **version control**, and introduce the concepts 
+been calling **version control** called **Git** (first developed by
+Linus Torvalds, of the Linux and Linux kernel fame), and introduce the concepts 
 necessary to get started. 
+
+

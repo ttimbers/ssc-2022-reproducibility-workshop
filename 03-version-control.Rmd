@@ -2,9 +2,8 @@
 title: "Version control - an introduction"
 subtitle: "SSC 2022 Reproducibility workshop"  
 author: 
-  - "TiffanyTimbers (UBC)"
-  - "`r Sys.Date()`"
-date: '*bit.ly/TBD*'
+  - "Tiffany Timbers (UBC)"
+date:  "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -499,6 +498,6 @@ class: inverse, center, middle
 
 
 
-### TiffanyTimbers
+### Tiffany Timbers
 
-#### talk slides: *[bit.ly/TBD](https://bit.ly/TBD)*
+#### talk slides: *[https://bit.ly/SES_Workshop_2022](https://bit.ly/SES_Workshop_2022)*
