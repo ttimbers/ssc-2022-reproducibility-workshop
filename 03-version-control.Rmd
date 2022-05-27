@@ -69,7 +69,7 @@ To version control a project, you generally need two things: a version control s
 
 .pull-right[
 ```{r phd-comic, out.width="68%"}
-knitr::include_graphics("img/version-control-intro/phdcomicid1531.png")
+knitr::include_graphics("img/03-version-control-intro/phdcomicid1531.png")
 ```
 ]
 
@@ -86,7 +86,7 @@ and conscious effort towards tracking changes made to an analysis,
 projects tend to become messy*
 
 ```{r charlie-day-meme, out.width="50%"}
-knitr::include_graphics("img/version-control-intro/charlie-day-meme.png")
+knitr::include_graphics("img/03-version-control-intro/charlie-day-meme.png")
 ```
 
 *Source: https://imgflip.com/memegenerator/92459171/Charlie-Day*
@@ -117,7 +117,7 @@ Version control software also facilitates collaboration via tools for:
 
 .pull-right[
 ```{r bicycle-gif, out.width="55%"}
-knitr::include_graphics("img/version-control-intro/bicycle-gif.gif")
+knitr::include_graphics("img/03-version-control-intro/bicycle-gif.gif")
 ```
 ]
 
@@ -126,13 +126,21 @@ knitr::include_graphics("img/version-control-intro/bicycle-gif.gif")
 
 ---
 
+class: middle
+
+.pull-left[
+<br><br><br>
+
 ## Version control repositories
 
-Typically, when we put a data analysis project under version control, we create two copies of the repository:
+Typically, when we put a data analysis project under version control, we create two copies of the repository.
+]
 
-```{r vc1-no-changes, out.width="53%"}
-knitr::include_graphics("img/version-control-intro/vc1-no-changes.png")
+.pull-right[
+```{r vc1-no-changes, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc1-no-changes.png")
 ```
+]
 
 ---
 
@@ -144,23 +152,248 @@ To version control a project, you generally need two things: a version control s
 
 ```{r git-vs-github, out.width="40%"}
 # source: https://www.edureka.co/blog/how-to-use-github/
-knitr::include_graphics("img/version-control-intro/git-vs-github.png")
+knitr::include_graphics("img/03-version-control-intro/git-vs-github.png")
 ```
 
 *Source: https://www.edureka.co/blog/how-to-use-github/*
----
-
-### References
-
-
-
-### Credits
 
 ---
 
-### Acknowledgements
+class: middle
+
+.pull-left[
+<br><br><br>
+## Committing changes to a local repository
+
+When working on files in your local version control 
+repository and saving your work, 
+these changes will only initially exist in the
+working directory of the local repository.
+]
+
+.pull-right[
+```{r vc2-changes, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc2-changes.png")
+```
+]
+
+---
+
+class: middle
+
+.pull-left[
+
+## Committing changes to a local repository 
+
+Once you reach a point that you want Git to keep a record 
+of the current version of your work, you need to commit 
+(i.e., snapshot) your changes. 
+
+A prerequisite to this is telling Git which
+files should be included in that snapshot. We call this step *adding* the 
+files to the *staging area*. 
+]
+
+.pull-right[
+
+```{r vc-ba2-add, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc-ba2-add.png")
+```
+]
+
+---
+
+class: middle
+
+.pull-left[
+<br>
+## Committing changes to a local repository
+
+Once the files we wish to commit have been added 
+to the staging area, we can then commit those files to the repository history.
+
+When we do this, we are required to include a helpful *commit message* to tell 
+collaborators (which often includes future you!) about the changes that were
+made.
+]
+
+.pull-right[
+```{r vc-ba3-commit, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc-ba3-commit.png")
+```
+]
+
+---
+
+class: middle
+
+.pull-left[
+<br><br><br><br><br>
+## Pushing changes to a remote repository
+
+Once you have made one or more commits that you want to share with your collaborators, 
+you need to *push* (i.e., send) those commits back to GitHub.
+
+]
+
+.pull-right[
+```{r vc5-push, out.width="80%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc5-push.png")
+```
+]
+
+---
+
+class: middle
+
+.pull-left[
+<br><br><br><br>
+## Pulling changes from a remote repository
+
+If you are working on a project with collaborators, 
+they will also be making changes to files
+(e.g., to the analysis code in a Jupyter notebook and the project's README file),
+committing them to their own local repository, 
+and pushing their commits to the remote GitHub repository to share them with you. 
+
+When they push their changes, those changes will only initially exist in 
+the remote GitHub repository and not in your local repository.
+]
+
+.pull-right[
+```{r vc6-remote-changes, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc6-remote-changes.png")
+```
+]
+
+---
+
+class: middle
+
+.pull-left[
+<br><br><br><br>
+## Pulling changes from a remote repository
+
+To obtain the new changes from the remote repository on GitHub, you will need
+to *pull* those changes to your own local repository. 
+
+By pulling changes,
+you synchronize your local repository to what is present on GitHub .
+
+Additionally, until you pull changes from the remote repository, 
+you will not be able to push any more changes yourself 
+(though you will still be able to work 
+and make commits in your own local repository). 
+]
+
+.pull-right[
+```{r vc7-pull, out.width="100%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc7-pull.png")
+```
+]
+
+---
+
+class: center
+
+## Version control summary
+
+```{r vc5-5-nachos-to-cheesecake, out.width="50%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/vc5-5-nachos-to-cheesecake.png")
+```
+---
+
+class: middle
+
+### Knowledge check!
+
+Which of these is untrue about the Git and GitHub version control software?
+
+a. Allows you to view and/or retrieve older snapshots of the files and directories in a project.
+
+b. Automatically snapshots your work every 2 minutes.
+
+c. Provides transparency on who made what changes to files and directories in a document.
+
+d. Can act as a way to back-up your work.
+
+---
+
+class: middle
+
+### Knowledge check!
+
+ GitHub is the software you use locally on your computer (i.e., your laptop) to commit changes to the version control history. True or False?
+
+a. True
+
+b. False
+
+c. Neither true or false.
+
+---
+
+class: middle
+
+### Knowledge check!
 
 
+You changed two files (notes.txt and eda.ipynb) 
+but you only want to commit changes to one of them (eda.ipynb) 
+to the version control history. 
+Which Git command allows you to specify this?
+
+a. Add
+
+b. Commit
+
+c. Push
+
+d. Push
+
+
+---
+
+class: middle
+
+### Knowledge check!
+
+At a minimum, how often should you push your work to GitHub?
+
+a. Every 5 min.
+
+b. Every 30 min.
+
+c. At the end of every work session.
+
+d. Once a week.
+
+---
+
+class: middle
+
+### Knowledge check!
+
+You try to push your most recent commit from your locale version control repository to your remote repository on GitHub and it fails because Git says the remote contains work that you have locally. What do should you do next?
+
+a. Commit the changes you made recently in your working directory.
+
+b. Force push your changes.
+
+c. Pull the changes from the remote repository that you do not have locally.
+
+---
+
+class: middle, center
+
+## Attribution
+
+Illustrations of version control steps were derived from
+<br>[*Data Science: A First Introduction*](https://datasciencebook.ca/) by Timbers, Campbell & Lee (2022)
+
+```{r ds-a-first-intro-cover, out.width="25%", fig.retina=2}
+knitr::include_graphics("img/03-version-control-intro/ds-a-first-intro-cover.jpeg")
+```
 ---
 
 class: inverse, center, middle
