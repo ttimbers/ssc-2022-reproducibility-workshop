@@ -33,6 +33,6 @@ compute environment managment.
 
 - what is reproducibility and why is it important (15 min)
 - the importance of reproducible coding habits (e.g., scripting, *usethis*, *here*) for portability and 're-run-ability' (15 minutes)
-- version control (Git, mostly - concepts, mapping, understanding the basics of branching and commits) (45 minutes)
+- version control (Git, mostly - concepts, understanding the basics using local and remote version control) (45 minutes)
 - integrating version control into your workflow (Git & GitHub via RStudio/Happy Git with R) (60 minutes)
 - shareable compute environments (e.g., `renv`) (45 minutes)
