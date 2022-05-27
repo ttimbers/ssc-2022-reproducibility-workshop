@@ -51,7 +51,7 @@ class: center, middle
 
 ---
 
-class: center, middle
+class: middle
 
 ## Why shippable and shareable computational environments
 
@@ -135,7 +135,7 @@ The website and the `renv` package is written and maintained by [Kevin Ushey](ht
 
 class: middle
 
-## Workflow
+## General workflow
 
 The general workflow when working with renv is:
 
@@ -373,7 +373,6 @@ class: middle
 - By default, `renv::snapshot()` will examine your project’s R files to determine which packages are used in your project, and will include only those packages (alongside their recursive dependencies) in the lockfile. 
 
 - renv does this by scanning your code for calls to `library()` or `require()`.
-
 
 ---
 
