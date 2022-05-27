@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Importance of Reproducible Coding Habits</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wesley Burr (Trent)" />
+    <meta name="date" content="2022-05-26" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, left, title-slide
+
+# Importance of Reproducible Coding Habits
+## SSC 2022 Reproducibility workshop
+### Wesley Burr (Trent)
+### 2022-05-26
+
+---
+
+
+
+
+
+
+## Reproducible Research
+
+In order to ensure research outputs are robust, and to maximize the time,
+money, blood, sweat, and tears that went into it, for future researchers
+and for society in general, it is critical that we share the underlying
+code and data. 
+
+In these slides, we will attempt to convince you of this.
+
+---
+
+## Have You Ever ...
+
+Karl -- this is very interesting ,
+however you used an old version of
+the data (n=143 rather than n=226).
+I'm really sorry you did all that
+work on the incomplete dataset.
+- Bruce
+
+*[Source](https://www.biostat.wisc.edu/~kbroman/presentations/repro_research_JSM2016.pdf) from a talk at JSM 2016 by Karl Broman*
+
+---
+
+## Have You Ever ...
+
+You come back to a project, which you know was working, and find that
+nothing runs anymore. And what runs, doesn't match what you remember.
+
+**Worse**: the reviewers come back with some positive feedback for your paper,
+but ask that you check something in one of the model runs. When you go to do
+so ... nothing matches the output in the paper. Not the figures, not the tables,
+not the results. What happened??!?
+
+---
+
+## Have You Ever ...
+
+"Your script is giving me an error when I run it on my computer."
+- Your Collaborator (*who you used to like*)
+
+---
+
+## Have You Ever ...
+
+&lt;img src="img/03-version-control-intro/phdcomicid1531.png" width="32%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Have You Ever ...
+
+&lt;img src="img/02-importance-of-reproducibility/redpen-blackpen-collab.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## So Why is It Important?
+
+- your personal sanity
+
+--
+
+- the great scientific endeavor
+
+--
+
+- no, but seriously: your personal sanity
+
+--
+
+- having things "just work", like you expect
+
+--
+
+- avoiding embarrassment
+
+---
+
+## Listen to some others ...
+
+File organization and naming is a mighty weapon against chaos
+- Jenny Bryan
+
+---
+
+##  Listen to some others ...
+
+You mostly collaborate with yourself, 
+and me-from-two-months-ago never responds to email.
+- Mark Holder
+
+---
+
+##  Listen to some others ...
+
+Dear past-Hadley: PLEASE COMMENT YOUR CODE BETTER. Love present-Hadley
+
+— [@hadleywickham](https://twitter.com/hadleywickham/status/718203628528349184)
+
+---
+
+##  Listen to some others ...
+
+The most important tool for Reproducible Research is the mindset, when starting, that the end product will be reproducible.
+- [Keith Baggerly](https://twitter.com/kwbroman/status/667735926915731457)
+
+---
+
+class: inverse
+
+## Basic Principles
+
+Basic principles
+
+Step 1: slow down and document.&lt;br/&gt;
+Step 2: have sympathy for your future self.&lt;br/&gt;
+Step 3: have a system.&lt;br/&gt;
+
+- [Karl Broman, UW-Madison](https://kbroman.org/Tools4RR/assets/lectures/06_org_eda_withnotes.pdf)
+
+---
+
+## Tips for Getting Started in Small Ways
+
+- force yourself to organize your course materials in a coherent manner
+(assuming you teach); or a *small* research project, if you don't
+
+--
+
+- use Git to store your materials (make them available freely, if you can!) - more soon
+
+--
+
+- create your slides in R Markdown or an equivalent framework
+
+--
+
+- add one piece of the puzzle with each subsequent project
+
+--
+
+- think of all of your outputs as code (including your teaching!)
+
+---
+
+## A Personal Example
+
+I write all of my slides for my big classes in R Markdown. They are knit
+as part of a project, and the entire course is a Git repository. This has
+a number of advantages:
+
+- all slides can be publicly available
+
+--
+
+- it is very easy to update a course website (build -&gt; commit -&gt; push)
+
+--
+
+- I never lose old slides - they're all on GitHub
+
+--
+
+- it is trivial to cross-link from lecture to lecture, or to reuse material without making multiple copies
+
+--
+
+- the lectures are **code**
+
+---
+
+## What Do I mean "the lectures are code"?
+
+Depending on how computational your statistics world is, this may not
+fully sink in. What is **code**?
+
+- all text (ASCII or UTF)
+
+--
+
+- editable in any environment, on any computer
+
+--
+
+- rendered in some way to form a final product
+
+--
+
+- trivially versionable
+
+--
+
+Compare this to, e.g., a **pptx** (Microsoft Office - Powerpoint). 
+Have you ever tried to open a pptx file in anything **but** Powerpoint? 
+Or in anything but a slide editor (e.g., Notepad)?
+
+---
+
+## Once You See It
+
+Once you start thinking of almost all of our work product as
+examples of code, you start to see how everything can be treated
+the same, in terms of workflow, versioning, file organization and
+naming, sharing, and so on.
+
+
+In the next session, we will dive into a version of what we have
+been calling **version control**, and introduce the concepts 
+necessary to get started. 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
