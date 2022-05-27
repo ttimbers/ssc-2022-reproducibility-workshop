@@ -75,6 +75,7 @@ at Stanford:
 
 **J. Claerbout, M. Karrenbach**, *Electronic documents give reproducible research a new meaning*, in Proceedings of the 62nd Annual International Meeting of the Society of Exploration Geophysics, New Orleans, USA, 25 to 29 October 1992.
 
+( referenced by David Donoho in [1995](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.6201) )
 ---
 
 class: inverse
@@ -167,68 +168,6 @@ you *should*!), if you expect to teach it properly, you have to know how to do i
 
 <br/>
 https://datacarpentry.org/
-
----
-
-## Tips for Getting Started in Small Ways
-
-- force yourself to organize your course materials in a coherent manner
-
---
-
-- use Git to store your course materials (make them available freely!) - more soon
-
---
-
-- create your slides in R Markdown or an equivalent framework
-
---
-
-- always be learning!
-
----
-
-## Inspiration
-
-File organization and naming is a mighty weapon against chaos
-- Jenny Bryan
-
----
-
-## Inspiration
-
-You mostly collaborate with yourself, 
-and me-from-two-months-ago never responds to email.
-- Mark Holder
-
----
-
-## Inspiration
-
-Dear past-Hadley: PLEASE COMMENT YOUR CODE BETTER. Love present-Hadley
-
-— [@hadleywickham](https://twitter.com/hadleywickham/status/718203628528349184)
-
----
-
-## Inspiration
-
-The most important tool for Reproducible Research is the mindset, when starting, that the end product will be reproducible.
-- [Keith Baggerly](https://twitter.com/kwbroman/status/667735926915731457)
-
----
-
-class: inverse
-
-## Basic Principles
-
-Basic principles
-
-Step 1: slow down and document.<br/>
-Step 2: have sympathy for your future self.<br/>
-Step 3: have a system.<br/>
-
-- [Karl Broman, UW-Madison](https://kbroman.org/Tools4RR/assets/lectures/06_org_eda_withnotes.pdf)
 
 ---
 
