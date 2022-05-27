@@ -266,6 +266,56 @@ and make commits in your own local repository).
 
 class: center
 
+## Automatic merging of changes
+
+When collaborating, if different files are changed, 
+or even different lines in the same file are changed,
+Git can handle this with grace, and can automatically merge such changes.
+
+&lt;img src="img/03-version-control-intro/no-problem.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+*Source: https://giphy.com/gifs/no-problem-biggie-its-nothing-TfKuJzSVrB9bfaNgQf*
+
+---
+
+
+.pull-left[
+
+## Merge conflicts! 😱
+
+However when two collaborators change the same line, 
+Git throws up its hands and says, I cannot handle this responsbility, 
+I need help from a human!
+
+When this happens, your human task is to find the merge conflict markers, 
+remove them, and settle on which version of the line(s) 
+where the conflict occurred should remain.
+]
+
+
+.pull-right[
+&lt;img src="img/03-version-control-intro/sheldon.gif" width="100%" style="display: block; margin: auto;" /&gt;
+
+*Source: https://giphy.com/gifs/the-big-bang-theory-sheldon-cooper-spd8OEUnfXDBS*
+]
+
+---
+
+## Merge conflict markers:
+
+- the beginning of the merge conflict is preceded by `&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD`
+
+- the end of the merge conflict is marked by `&gt;&gt;&gt;&gt;&gt;&gt;&gt;`
+
+- between the markings mentioned above, Git also inserts a separator (`=======`). The version of the change before the separator is your change, and the version that follows the separator was the change that existed on GitHub.
+
+&lt;img src="img/03-version-control-intro/merge-conflict-identifiers.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+*Source: https://www2.stat.duke.edu/courses/Fall19/sta199.001/slides/lab-slides/03-lab-slides.html#5*
+---
+
+class: center
+
 ## Version control summary
 
 &lt;img src="img/03-version-control-intro/vc5-5-nachos-to-cheesecake.png" width="50%" style="display: block; margin: auto;" /&gt;
@@ -349,6 +399,20 @@ a. Commit the changes you made recently in your working directory.
 b. Force push your changes.
 
 c. Pull the changes from the remote repository that you do not have locally.
+
+---
+
+class: middle
+
+### Knowledge check!
+
+You pull changes that exist in your remote version control repository on GitHub that you do not have in your local version control repository, and you get the message `Auto-merging in &lt;FILENAME&gt; CONFLICT (content): Merge conflict in &lt;FILENAME&gt; Automatic merge failed; fix conflicts and then commit the result`. What do you need to do?
+
+a. Push the changes from the local repository that you do not have remotely.
+
+b. Force pull the changes.
+
+c. Manually open the file with the conflict and edit it to have the desired version of the changes, as well as remove the special Git syntax used to identify the merge conflict.
 
 ---
 
