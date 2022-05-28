@@ -4,7 +4,7 @@
     <title>Shippable and shareable computational environments</title>
     <meta charset="utf-8" />
     <meta name="author" content="TiffanyTimbers (UBC)" />
-    <meta name="author" content="2022-05-27" />
+    <meta name="date" content="2022-05-27" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -16,7 +16,6 @@ class: top, left, title-slide
 ## SSC 2022 Reproducibility workshop
 ### TiffanyTimbers (UBC)
 ### 2022-05-27
-### <em>bit.ly/TBD</em>
 
 ---
 
@@ -192,7 +191,9 @@ class: middle
 
 ## Let's try it out!
 
-1. Click the green "Use this template" button in [this repository](TBD) to obtain a copy of it for yourself.
+1. Click the green "Use this template" button in 
+[this repository](https://github.com/ttimbers/renv-demo) 
+to obtain a copy of it for yourself.
 
 2. Clone this repository to your computer.
 
@@ -261,7 +262,8 @@ is to update an `renv` environment as you add dependencies to your project.
 
 1. Work in the project as normal, installing and removing new R packages as they are needed in the project.
 
-2. Call `renv::snapshot()` to save the state of the project library to the lockfile (called `renv.lock`).
+2. Call `renv::snapshot()` to save the state of the project library 
+to the lockfile (called `renv.lock`).
 
 3. Commit the changes to `renv.lock` (and your changed code!) 
 to local version control,
@@ -274,35 +276,39 @@ class: middle
 
 ## Let's try it out!
 
-- Install the `fortunes` R package via:
+- Install the [`statquotes`](https://github.com/friendly/statquotes) 
+R package via:
 
 
 ```r
-install.packages("fortunes")
+install.packages("statquotes")
 ```
 
-- Add the following code to a code chunk at the top of your `report.rmd`
+- Add the following code to the code chunk on line 16 of `star-wars.Rmd`:
 
 
 ```r
-library(fortunes)
-fortune(2022)
+library(statquotes)
+as.markdown(search_quotes("environment"))
 ```
 
 - Call `renv::snapshot()` to save the state of the project library to the lockfile (called `renv.lock`).
 
 Examine the `renv.lock` file. 
-You should see something like this near the end of the file:
+You should see something like this near line 381 of the `renv.lock` file:
 
 ```
-"fortunes": {
-      "Package": "fortunes",
-      "Version": "1.5",
+"statquotes": {
+      "Package": "statquotes",
+      "Version": "0.2.6",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "908d95ccbfd1dd274073ef07a7c93934"
-    }
+      "Hash": "d771dc735b1829ff511855197fc4c107",
 ```
+
+- To share the changes to the environment, 
+commit the changes to the `renv.lockfile` 
+and push them to your remote version control repository.
 
 ---
 
@@ -335,18 +341,23 @@ class: middle
 
 ## Let's try it out!
 
-1. Click the green "Use this template" button in [this repository](TBD) to obtain a copy of it for yourself.
+1. Click the green "Use this template" button in 
+[this repository](https://github.com/ttimbers/no-renv-project) 
+to obtain a copy of it for yourself.
 
 2. Clone this repository to your computer using RStudio's version control tools.
 
-3. Examine `report.rmd` to see what packages the project depends on.
+3. Examine `script.r` to see what packages the project depends on.
 
-4. Call `renv::snapshot()` to save the state of the project library to the lockfile (called `renv.lock`).
+4. Call `renv::snapshot()` to save the state of the project library 
+to the lockfile (called `renv.lock`).
 
 5. Put the `.Rprofile`, `renv.lock` and `renv/activate.R` files under local 
 and remote version control.
 
-Examine the `renv.lock` file - do the packages there match what you saw at the top of `report.rmd` - that's neat... How does that work???
+Examine the `renv.lock` file - 
+do the packages there match what you saw at the top of `script.r` - 
+that's neat... How does that work???
 
 ---
 
