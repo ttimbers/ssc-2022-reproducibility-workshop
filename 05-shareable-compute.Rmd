@@ -164,7 +164,7 @@ The following files are written to and used by projects using `renv`:
 | `renv/library`      | The private project library.                                                        |
 | `renv/settings.dcf` | Project settings -- see `?settings` for more details.                               |
 
-> For development and collaboration, the `.Rprofile`, `renv.lock` 
+> For development and collaboration, the `.Rprofile`, `renv.lock`, `.Rprofile` 
 and `renv/activate.R` files should be committed to your version control system
 
 ---
@@ -348,7 +348,7 @@ you then need to set it up yourself!
 
 5. Call `renv::snapshot()` to save the state of the project library to the lockfile (called `renv.lock`).
 
-6. Put the `.Rprofile`, `renv.lock` and `renv/activate.R` files under local 
+6. Put the `.Rprofile`, `renv.lock`, `.Rprofile` and `renv/activate.R` files under local 
 and remote version control to share your environment with your collaborators.
 
 ---
@@ -368,7 +368,7 @@ to obtain a copy of it for yourself.
 4. Run `renv::init()` to initialize a new project-local 
 environment with a private R library.
 
-5. Put the `.Rprofile`, `renv.lock` and `renv/activate.R` files under local 
+5. Put the `.Rprofile`, `renv.lock`, `.Rprofile` and `renv/activate.R` files under local 
 and remote version control.
 
 Examine the `renv.lock` file - 
