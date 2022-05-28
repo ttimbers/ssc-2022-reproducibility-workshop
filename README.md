@@ -25,7 +25,7 @@ or another were made, among other things.
 Thoughts: writing code is important for creating reproducible and auditable analyses, but it is not enough. 
 More is needed, including a recorded and shareable compute environment, and a version controlled history of the project.
 
-### Possible workshop topics:
+### Workshop topics:
 
 We assume the audience is most likely familiar with the R programming language (as opposed to Python) 
 and would prefer to stay in an R-only world as opposed to moving into more *devops* (software development + IT operations) like tools for 
@@ -36,3 +36,10 @@ compute environment managment.
 - version control (Git, mostly - concepts, understanding the basics using local and remote version control) (45 minutes)
 - integrating version control into your workflow (Git & GitHub via RStudio/Happy Git with R) (60 minutes)
 - shareable compute environments (e.g., `renv`) (45 minutes)
+
+## License
+
+Software licensed under the [MIT License](https://spdx.org/licenses/MIT.html), 
+non-software content licensed under the 
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
+See the [license file](LICENSE.md) for more information.
