@@ -3,7 +3,7 @@ title: "Importance of Reproducible Coding Habits"
 subtitle: "SSC 2022 Reproducibility workshop"  
 author: 
   - "Wesley Burr (Trent)"
-date: "`r Sys.Date()`"
+date: "2022-05-29"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -60,7 +60,7 @@ I'm really sorry you did all that
 work on the incomplete dataset.
 - Bruce
 
-*[Source](https://www.biostat.wisc.edu/~kbroman/presentations/repro_research_JSM2016.pdf) from a talk at JSM 2016 by Karl Broman*
+*[Sourced](https://www.biostat.wisc.edu/~kbroman/presentations/repro_research_JSM2016.pdf) from a talk at JSM 2016 by Karl Broman*
 
 ---
 
@@ -161,7 +161,7 @@ Step 3: have a system.<br/>
 
 --
 
-- create your slides in R Markdown or an equivalent framework
+- create your slides in a markdown framework
 
 --
 
@@ -276,7 +276,7 @@ to easily build paths to files.
 
 ## Tool: here
 
-```{r here, out.width="60%"}
+```{r here, out.width="50%"}
 knitr::include_graphics("img/02-importance-of-reproducibility/02-here.png")
 ```
 
