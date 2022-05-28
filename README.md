@@ -12,7 +12,7 @@ transformed the teaching of statistics, facilitating the development of active a
 
 **Data science:** process of extracting insight from data through reproducible and auditable methods.
 
-**Reproducibile analysis:** reaching the same result given the same input, computational methods, 
+**Reproducible analysis:** reaching the same result given the same input, computational methods, 
 and conditions (from National Academy of Sciences, 2019).
 
 **Auditable analysis:** an analysis with a readable record of the steps used to carryout
