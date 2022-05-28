@@ -3,7 +3,7 @@ title: "SSC 2022 Reproducibility Workshop"
 author: 
   - "Tiffany Timbers (UBC) and Wesley Burr (Trent)"
   - "`r Sys.Date()`"
-date: '*https://bit.ly/SES_Workshop_2022*'
+date: 'bit.ly/SES_Workshop_2022'
 output:
   xaringan::moon_reader:
     lib_dir: libs
