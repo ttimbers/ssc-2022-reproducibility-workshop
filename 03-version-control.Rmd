@@ -3,7 +3,7 @@ title: "Version control - an introduction"
 subtitle: "SSC 2022 Reproducibility workshop"  
 author: 
   - "Tiffany Timbers (UBC)"
-date:  "`r Sys.Date()`"
+date:  "2022-05-29"
 output:
   xaringan::moon_reader:
     lib_dir: libs
