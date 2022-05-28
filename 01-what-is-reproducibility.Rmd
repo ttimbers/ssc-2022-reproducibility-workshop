@@ -3,7 +3,7 @@ title: "What is Reproducibility?"
 subtitle: "SSC 2022 Reproducibility Workshop"  
 author: 
   - "Wesley Burr (Trent)"
-date: "`r Sys.Date()`"
+date: "2022-05-29"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -41,10 +41,6 @@ style_duo_accent(
 )
 ```
 
-class: center, middle
-
-# Background: Reproducibility
-
 ```{r include=FALSE}
 library(ggplot2)
 filter <- dplyr::filter
@@ -52,8 +48,6 @@ knitr::opts_chunk$set(warning=FALSE, message=FALSE, fig.width=10.5, fig.height=4
   comment=NA, rows.print=16)
 #theme_set(theme_gray(base_size = 24))
 ```
-
----
 
 ## Reproducibility 
 
