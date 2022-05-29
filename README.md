@@ -47,9 +47,9 @@ See the [license file](LICENSE.md) for more information.
 ## Slides
 
 Links to slides:
-* [Main slide parent](https://github.com/ttimbers/ssc-2022-reproducibility-workshop/blob/main/SSC-2022-Reproducibility-Workshop.html)
-    * [Slide Deck 01](01-what-is-reproducibility.html)
-    * [Slide Deck 02](02-importance-of-reproducible-coding-habits.html)
-    * [Slide Deck 03](03-version-control.html)
-    * [Slide Deck 04](04-integration-version-control-Rstudio.html)
-    * [Slide Deck 05](05-shareable-compute.html)
+* [Parent Set of Slides, with Internal Links](https://github.com/ttimbers/ssc-2022-reproducibility-workshop/blob/main/SSC-2022-Reproducibility-Workshop.html)
+    * [Slide Deck 01: What Is Reproducibility?](01-what-is-reproducibility.html)
+    * [Slide Deck 02: Importance of Reproducible Coding Habits](02-importance-of-reproducible-coding-habits.html)
+    * [Slide Deck 03: Version control - an introduction](03-version-control.html)
+    * [Slide Deck 04: Integrating Version Control with RStudio](04-integration-version-control-Rstudio.html)
+    * [Slide Deck 05: Shippable and shareable computational environments](05-shareable-compute.html)
