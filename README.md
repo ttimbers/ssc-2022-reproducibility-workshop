@@ -43,3 +43,13 @@ Software licensed under the [MIT License](https://spdx.org/licenses/MIT.html),
 non-software content licensed under the 
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
 See the [license file](LICENSE.md) for more information.
+
+## Slides
+
+Links to slides:
+* [Main slide parent](https://github.com/ttimbers/ssc-2022-reproducibility-workshop/blob/main/SSC-2022-Reproducibility-Workshop.html)
+    * [Slide Deck 01](01-what-is-reproducibility.html)
+    * [Slide Deck 02](02-importance-of-reproducible-coding-habits.html)
+    * [Slide Deck 03](03-version-control.html)
+    * [Slide Deck 04](04-integration-version-control-Rstudio.html)
+    * [Slide Deck 05](05-shareable-compute.html)
